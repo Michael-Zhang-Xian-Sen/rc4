@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="img/Dawn.jpg">
+					<h3>rc4算法</h3>
+					<small class="orange">你的密码我知道小队：	张浩、李佳妮、姜琛华、王聪</small>
+				</section>
+				<section>
+					<h3>什么是 <span class="red">rc4</span> 算法呢？</h3>
+					<small>
+						RC4算法是:RSA三人组中的头号人物Ronald Rivest在1987年设计的密钥长度可变的<b>流加密算法簇</b>
+					</small>
+					<small>属于对称加密密钥</small>
+					<small></small>
+				</section>
+				<section>
+					<h3>前导小知识</h3>
+				</section>
+				<section>
+					<h3>原理</h3>
+				</section>
+				<section>
+					<h3>应用</h3>
+					<ul>
+						<li>无线局域网——wep协议</li>
+						<li>——ShadowSocks</li>
+					</ul>
+				</section>
+				<section>
+					<h3>漏洞——wep协议已失去应用能力</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
