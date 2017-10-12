@@ -26,33 +26,61 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="img/Dawn.jpg">
+				<section >
 					<h3>rc4算法</h3>
 					<small class="orange">你的密码我知道小队：	张浩、李佳妮、姜琛华、王聪</small>
 				</section>
 				<section>
 					<h3>什么是 <span class="red">rc4</span> 算法呢？</h3>
-					<small>
-						RC4算法是:RSA三人组中的头号人物Ronald Rivest在1987年设计的密钥长度可变的<b>流加密算法簇</b>
-					</small>
-					<small>属于对称加密密钥</small>
-					<small></small>
-				</section>
-				<section>
-					<h3>前导小知识</h3>
-				</section>
-				<section>
-					<h3>原理</h3>
-				</section>
-				<section>
-					<h3>应用</h3>
 					<ul>
-						<li>无线局域网——wep协议</li>
-						<li>——ShadowSocks</li>
+						<li>RC4算法是:RSA三人组中的头号人物Ronald Rivest在1987年设计的密钥</li>
+						<li>属于"对称加密密钥"</li>
+						<li>采用“一次一密”</li>
 					</ul>
 				</section>
 				<section>
-					<h3>漏洞——wep协议已失去应用能力</h3>
+					<section>
+						<h3>前导小知识</h3>
+						<ul>
+							<li>对称加密:不是不对称咯。</li>
+							<li>一次一密:指在流密码当中使用与消息长度等长的随机密钥,密钥本身只使用一次。</li>
+						</ul>
+					</section>	
+				</section>
+				<section>
+					<section>
+						<h3>原理</h3>
+						<img src="img/algorithm.jpg">
+					</section>
+					<section>
+						<h4>关于代码中的unsigned char</h4>
+						<img src="img/ascii.jpg">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>应用</h3>
+						<ul>
+							<li>无线局域网——wep协议</li>
+							<li>ShadowSocks</li>
+						</ul>
+					</section>
+					<section>
+					<li>
+						<img src="img/shadow.png">
+					</li>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>漏洞——很多通信方式已不采取wep协议</h3>
+					</section>
+					<section>
+						<img src="img/mx6.jpg">
+					</section>
+				</section>
+				<section>
+					<h2>Thanks for listening!</h2>
 				</section>
 			</div>
 		</div>

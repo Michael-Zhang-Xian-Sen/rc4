@@ -16,7 +16,7 @@ int main(){
     printf("请输入待加密明文：");
     scanf("%s",plainText);
     rc4_init(sBox,(unsigned char *)key);
-    printf("已生成流密码。");
+    printf("\n......已打乱sBox......\n\n");
     for(int i=0;i<256;i++){
         sRandomBox[i] = sBox[i];
     }
@@ -35,6 +35,7 @@ void rc4_init(unsigned char *sBox,unsigned char *key){
         sBox[i] = i;
         k[i] = key[i%len];
     }
+    printf("\n......已生成sBox......\n");
     for(int j=0, i=0;i<256;i++){
         j = (j+sBox[i]+k[i])%256;
 	// swap sbox[i],sbox[j];
@@ -56,6 +57,7 @@ void rc4_crypt(unsigned char *sBox,unsigned char *data){
         sBox[i] = sBox[j];
         sBox[j] = tmp;
         t = (sBox[i]+sBox[j])%256;
+	// sBox[t]为流密码当前字节
         data[k] ^= sBox[t];
     }
 }
